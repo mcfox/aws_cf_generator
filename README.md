@@ -1,6 +1,6 @@
-# Instalação de Produção ou Homologação
+# Criação de um Stack na AWS
 
-Para instalar o aplicativo, temos 2 arquivos do Cloud Formation:
+Para criar o stack do aplicativo, temos 2 arquivos do Cloud Formation:
 
 - O primeiro para montar um EC2 base onde os aplicativos irão rodar, que a partir desse EC2
 iremos gerar a AMI base para as maquinas de homologação e produção
@@ -48,7 +48,12 @@ Primeiro instale o troposphere na sua maquina
 
 Para gerar o cloud formation, execute o arquivo aws_stack.py com o python
 
-    python aws_stack.py
+    python aws-ami-generator.py
+    python aws-stack-generator.py
+    
+ou
+    
+    ./buid_templates.sh
     
 Responda as perguntas e no final um novo arquivo .json será criado
 
