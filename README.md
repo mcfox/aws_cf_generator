@@ -2,7 +2,7 @@
 
 Para instalar o aplicativo, temos 2 arquivos do Cloud Formation:
 
-- O primeiro para montar a maquina base onde os aplicativos irão rodar, que a partir desse EC2
+- O primeiro para montar um EC2 base onde os aplicativos irão rodar, que a partir desse EC2
 iremos gerar a AMI base para as maquinas de homologação e produção
 
 - O segundo é para montar o STACK completo do aplicativo, que usa como
